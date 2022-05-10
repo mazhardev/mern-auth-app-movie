@@ -12,7 +12,7 @@ const Navbar = ({ auth: { isAuthenticated, user, guestLinks }, logout }) => {
           <Link to="/users">Registered users</Link>
         )}
       </li>
-    
+
       <li>
 
         <Link to="/add-movie">Add Movie</Link>
@@ -33,9 +33,9 @@ const Navbar = ({ auth: { isAuthenticated, user, guestLinks }, logout }) => {
 
   const _guestLinks = (
     <ul>
-      {guestLinks && (
+      {(
         <li>
-          <Link to="/login-user">Login</Link>
+          <Link to="/login-user">User Login</Link>
         </li>
       )}
       {guestLinks && (
